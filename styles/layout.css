@@ -128,7 +128,7 @@ textarea {
     width: 644px;
     resize: none;
 }
-.input-error {
+.ts-input-error {
     border-color: #fe3b3b;
     background-color: #fdffd9;
 }
