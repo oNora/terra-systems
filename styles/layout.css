@@ -1,0 +1,217 @@
+body {
+    background-color: #f2f2f2;
+    font-size: 1.125rem;
+    font-family: "MyriadPro", Arial, Helvetica, sans-serif;
+    line-height: 1.5625rem;
+    color: #666666;
+}
+
+/* ------ background ------ */
+.ts-dark-bg {
+    background-color: #3a3a3a;
+}
+.ts-light-bg {
+    background-color: #666666;
+}
+
+/* ------ text styles ------ */
+h1 {
+    font-size: 3.8125rem;
+    line-height: 2.4375rem
+}
+
+h2 {
+    font-size: 2.625rem;
+}
+
+h3 {
+    font-size: 2.125rem;
+}
+a {
+    color: #3ab771;
+}
+
+.ts-small-text {
+    font-size: 1rem;
+    line-height: 1.5625rem;
+}
+.ts-large-text {
+    font-size: 1.5625rem;
+    line-height: 2.4375rem;
+}
+.ts-light-text {
+    color: #d3d3d3;
+}
+.ts-custom-text-1 {
+    font-size: 1.5625rem;
+    line-height: 1.5625rem;
+    font-weight: bold;
+    color: #111111;
+}
+.ts-custom-text-2 {
+    font-size: 1.9375rem;
+    line-height: 2.4375rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #999999;
+}
+.ts-custom-ligth-text {
+    color: #d3d3d3;
+}
+.ts-err-msg {
+    font-family: "MyriadPro";
+    font-size: 0.875rem;
+    letter-spacing: 1.12px;
+    color: #fe4949;
+}
+
+/* ------ buttons ------ */
+button, .ts-button {
+    padding: 7px 47px;
+    background: #f7f7f7;
+    border: 1px solid #f7f7f7;
+    border-radius: 35px;
+    font-family: "MyriadPro";
+    font-size: 0.8125rem;
+    letter-spacing: 2.08px;
+    line-height: 2.4375rem;
+    color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-box-shadow: 2px 2px 84px -16px rgba(0,0,0,0.46);
+    -moz-box-shadow: 2px 2px 84px -16px rgba(0,0,0,0.46);
+    box-shadow: 2px 2px 84px -16px rgba(0,0,0,0.46);
+}
+
+button:hover, .ts-button:hover,
+button:visited, .ts-button:visited {
+    border-color: #3ab771;
+    color: #3ab771;
+    box-shadow: none;
+}
+.ts-button-green {
+    background: #3ab771;
+    border: 1px solid #3ab771;
+    color: #ffffff;
+}
+.ts-button-green:hover, .ts-button-green:visited {
+    background: #ffffff;
+    border: 1px solid #222222;
+    color: #222222;
+}
+.ts-button-dark {
+    background: #3a3a3a;
+    border: 1px solid #3a3a3a;
+    color: #ffffff;
+}
+.ts-button-dark:hover, .ts-button-dark:visited {
+    background: #ffffff;
+    border: 1px solid #3ab771;
+    color: #3ab771;
+}
+
+
+/* ------ text field ------ */
+.ts-input, textarea {
+    padding: 7px 18px;
+    border: 1px solid #c7c7c7;
+    font-family: "MyriadPro";
+    font-size: 0.75rem;
+    line-height: 2.4375rem;
+    letter-spacing: 0.96px;
+    color: #999999;
+}
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 297px;
+}
+textarea {
+    width: 644px;
+    resize: none;
+}
+.input-error {
+    border-color: #fe3b3b;
+    background-color: #fdffd9;
+}
+
+
+/* ------ Checkboxes & radio button ------ */
+.ts-container-checkbox {
+    position: relative;
+    padding-left: 19px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox & radio button */
+.ts-container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox & radio button */
+.ts-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border: 1px solid #c7c7c7;
+}
+.ts-radio-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #ffffff;
+    border: 1px solid #c7c7c7;
+    border-radius: 50%;
+}
+
+/* On mouse-over - add background color */
+.ts-container-checkbox:hover input ~ .ts-checkmark,
+.ts-container-checkbox:hover input ~ .ts-radio-btn {
+    background-color: rgba(58, 183, 113, .2);
+}
+
+
+/* When the checkbox is checked - add background */
+.ts-container-checkbox input:checked ~ .ts-checkmark,
+.ts-container-checkbox input:checked ~ .ts-radio-btn {
+    background-color: #3ab771;
+    border-color: #3ab771;
+}
+
+/* checkmark/indicator */
+.ts-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked/hover*/
+.ts-container-checkbox input:checked ~ .ts-checkmark:after,
+.ts-container-checkbox input:hover ~ .ts-checkmark:after {
+    display: block;
+}
+
+/* checkmark/indicator */
+.ts-container-checkbox .ts-checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
