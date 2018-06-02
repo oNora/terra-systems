@@ -67,6 +67,11 @@
 
   a {
     background-color: transparent;
+    text-decoration: none;
+  }
+  a:focus, a:visited,
+  button:focus, button:visited {
+    outline: none;
   }
 
   /**
