@@ -67,7 +67,7 @@ a {
 /* ------ text styles END ------ */
 
 /* ------ buttons START ------ */
-button, .ts-button {
+ .ts-button {
     padding: 7px 47px;
     background: #f7f7f7;
     border: 1px solid #f7f7f7;
