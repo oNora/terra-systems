@@ -10,12 +10,36 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/fonts.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/reboot.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/layout.css" />
+
+    <!-- TODO: this is ony to show possible interaction of some elements -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./scripts/main.js"></script>
 </head>
 <body>
 
     <button>Send Request</button>
     <button class="ts-button-green">Send Request</button>
     <button class="ts-button-dark">Send Request</button>
+
+    <br />
+    <br />
+
+    <select id="mounth" class="ts-select-hidden">
+        <option value="hide">-- Month --</option>
+        <option value="january">January</option>
+        <option value="february">February</option>
+        <option value="march">March</option>
+        <option value="april">April</option>
+        <option value="may">May</option>
+        <option value="june">June</option>
+        <option value="july">July</option>
+        <option value="august">August</option>
+        <option value="september">September</option>
+        <option value="october">October</option>
+        <option value="november">November</option>
+        <option value="december">December</option>
+    </select>
+
 
     <br />
     <br />
@@ -59,5 +83,8 @@
         <input type="radio" name="radio">
         <span class="ts-radio-btn"></span>
     </label>
+
+    <br />
+    <br />
 </body>
 </html>
