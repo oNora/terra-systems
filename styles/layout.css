@@ -14,7 +14,7 @@ body {
     background-color: #666666;
 }
 
-/* ------ text styles ------ */
+/* ------ text styles START ------ */
 h1 {
     font-size: 3.8125rem;
     line-height: 2.4375rem
@@ -64,8 +64,9 @@ a {
     letter-spacing: 1.12px;
     color: #fe4949;
 }
+/* ------ text styles END ------ */
 
-/* ------ buttons ------ */
+/* ------ buttons START ------ */
 button, .ts-button {
     padding: 7px 47px;
     background: #f7f7f7;
@@ -109,9 +110,10 @@ button:visited, .ts-button:visited {
     border: 1px solid #3ab771;
     color: #3ab771;
 }
+/* ------ buttons END ------ */
 
 
-/* ------ text field ------ */
+/* ------ text field START ------ */
 .ts-input, textarea {
     padding: 7px 18px;
     border: 1px solid #c7c7c7;
@@ -132,9 +134,10 @@ textarea {
     border-color: #fe3b3b;
     background-color: #fdffd9;
 }
+/* ------ text field END ------ */
 
 
-/* ------ Checkboxes & radio button ------ */
+/* ------ Checkboxes & radio button START ------ */
 .ts-container-checkbox {
     position: relative;
     padding-left: 19px;
@@ -215,8 +218,9 @@ textarea {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+/* ------ Checkboxes & radio button END ------ */
 
-/* ------ dropdown ------ */
+/* ------ dropdown START------ */
 .ts-select-hidden {
     display: none;
     padding-right: 10px;
@@ -301,3 +305,10 @@ textarea {
 .ts-custom-options li[rel="hide"] {
     display: none;
 }
+/* ------ dropdown END------ */
+
+
+/* ------ modal dialog  START------ */
+
+
+/* ------ modal dialog  END------ */
