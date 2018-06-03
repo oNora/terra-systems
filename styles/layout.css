@@ -3,6 +3,7 @@ body {
     font-family: "MyriadPro", Arial, Helvetica, sans-serif;
     font-size: 1.125rem;
     line-height: 1.5625rem;
+    letter-spacing: 0.072px;
     color: #666666;
 }
 
@@ -358,5 +359,33 @@ textarea {
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
-
 /* ------ modal dialog  END------ */
+
+/* ------ alert message box  START------ */
+.ts-alert-msg {
+    position: fixed;
+    bottom: 21px; /* NB: whit real example the positioning might be change */
+    width: 478px; /* TODO: this might be change for responsive layout */
+    padding: 33px 70px;
+    background: #ffe9e9;
+    border: 1px solid #c7c7c7;
+    font-size: 0.9375rem;
+    letter-spacing: 1.2px;
+}
+.ts-alert-msg:after {
+    position: absolute;
+    left: 0px;
+    bottom: -9px;
+    display: block;
+    height: 32px;
+    width:  32px;
+    background-color: #ffe9e9;
+    box-shadow: 1px 1px 0px 0px #c7c7c7;
+    transform:             rotate( 91deg ) skew( 33deg );
+    -moz-transform:    rotate( 91deg ) skew( 33deg );
+    -ms-transform:     rotate( 91deg ) skew( 33deg );
+    -o-transform:      rotate( 91deg ) skew( 33deg );
+    -webkit-transform: rotate( 91deg ) skew( 33deg );
+    content: "";
+}
+/* ------ alert message box  END------ */
