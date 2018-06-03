@@ -298,7 +298,7 @@ textarea {
     transition: all 0.15s ease-in;
 }
 
-.ts-custom-options li:hover{
+.ts-custom-options li:hover {
     background: #f2f2f2;
 }
 
@@ -309,6 +309,54 @@ textarea {
 
 
 /* ------ modal dialog  START------ */
+/* NB:positions of the modal should be done through js because of the responsive */
+.ts-modal-dialog {
+    position: fixed;
+    top:50%;
+    left:50%;
+    width: 468px;  /* TODO: this might be change for responsive layout */
+    padding: 55px 75px;
+    background: #ffffff;
+    border: 1px solid #c7c7c7;
+    -webkit-box-shadow: -4px 0px 82px -23px rgba(0,0,0,0.45);
+    -moz-box-shadow: -4px 0px 82px -23px rgba(0,0,0,0.45);
+    box-shadow: -4px 0px 82px -23px rgba(0,0,0,0.45);
+    text-align: justify;
+}
+.ts-close-modal {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    background: #888888;
+    cursor: pointer;
+}
 
+.ts-close-modal::before, .ts-close-modal::after {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    height: 1px;
+    width: 20px;
+    margin-top: -1px;
+    background: #fff;
+    content: '';
+}
+
+.ts-close-modal::before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.ts-close-modal::after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
 
 /* ------ modal dialog  END------ */

@@ -41,5 +41,35 @@ $(document).ready(() => {
 
     });
 
+    // load method on document ready
+    positionModal();
+    showModal();
+    hideModal()
 
 })
+
+function positionModal() {
+    var windowWidth = $(window).width();
+    var windowHeight = $(window).height();
+    var modalWidth = $('.ts-modal-dialog').outerWidth();
+    var modalHeight = $('.ts-modal-dialog').outerHeight();
+
+    let top = (windowHeight/2)-(modalHeight/2);
+    let left = (windowWidth/2)-(modalWidth/2);
+    $('.ts-modal-dialog').css({'top': `${top}px`});
+    $('.ts-modal-dialog').css({'left': `${left}px`});
+}
+
+function showModal() {
+    $('.ts-button').on('click', () =>{
+        $('.ts-modal-dialog').css({'display': 'block'});
+    })
+}
+
+function hideModal() {
+
+    $('.ts-close-modal').on('click', () =>{
+        $('.ts-modal-dialog').css({'display': 'none'});
+    })
+
+}
